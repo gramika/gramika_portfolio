@@ -1,49 +1,60 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Cardo", serif;
+    max-width: 100%;
+    /* for easier debugging outline can be used*/
+    /* outline: 1px solid red; */
     /* background-color: navy; */
     /* color: black; */
 }
-#container{
+
+#container {
     position: relative;
     width: 100%;
     /* height: 100vh; */
-    background-color:navy
-    /* background-image: linear-gradient(to bottom right,white,navy,skyblue); */
+    background-color: navy
+        /* background-image: linear-gradient(to bottom right,white,navy,skyblue); */
 }
-nav{
+
+nav {
     /* position: fixed; */
     width: 100%;
     /* background-color: white; */
-    background-image: linear-gradient(to right,white,whitesmoke,skyblue);
+    background-image: linear-gradient(to right, white, whitesmoke, skyblue);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#logo{
+
+#logo {
     width: 100px;
     background-color: white;
     margin-left: 75px;
-    /* border: 2px solid whitesmoke;
-    border-radius: 50%; */
+    /* border: 2px solid whitesmoke;*/
+    border-radius: 50%;
+    margin-right: 10px;
 }
-.list-items{
+
+.list-items {
     display: inline;
     margin: 20px;
     font-weight: 800;
     list-style: none;
 }
-.list-data{
+
+.list-data {
     text-decoration: none;
     color: black;
 }
-.list-data:hover{
+
+.list-data:hover {
     color: purple;
     text-decoration: underline;
 }
-#home{
+
+#home {
     border: solid whitesmoke 1px;
     margin: 20px;
     height: 500px;
@@ -53,25 +64,28 @@ nav{
     background-image: url(./images/bg.avif);
     margin: 3% 8% 0px 8%;
 
-    
 }
-.home-text{
+
+.home-text {
     padding-left: 50px;
     padding-top: 100px;
     margin: 0px 50px;
     text-align: justify;
 }
-#heading{
+
+#heading {
     color: navy;
     font-weight: 600;
     font-size: 50px;
     margin-bottom: 20px;
 }
-#heading-sub{
+
+#heading-sub {
     color: blue;
     font-style: italic;
 }
-#download{
+
+#download {
     background-color: navy;
     border-radius: 10px;
     color: white;
@@ -80,16 +94,19 @@ nav{
     text-decoration: none;
     margin-top: 15px;
 }
-#img-home{
+
+#img-home {
     height: 470px;
     margin-top: 0px;
     padding: 5px;
 }
-#about{
+
+#about {
     margin: 2% 8% 0px 8%;
     border: solid 1px navy;
 }
-.head{
+
+.head {
     text-align: center;
     /* text-decoration: underline; */
     padding: 30px;
@@ -98,85 +115,103 @@ nav{
     font-size: 32px;
 }
 
-.about-body{
+.about-body {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 0%;
 }
 
-#about-paragraph{
+.about-img {
+    max-width: 100%;
+}
+
+#about-paragraph {
     text-align: justify;
     font-size: 20px;
     padding: 20px;
     color: wheat;
 }
-#projects{
+
+#projects {
     margin: 2% 8% 0px 8%;
     border: 1px solid navy;
 }
-.main-projects{
+
+.main-projects {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     /* gap: 1.3rem; */
 }
-.project-list{
+
+.project-list {
     /* border: 2px solid whitesmoke; */
     text-align: center;
     background-color: rgb(60, 127, 175);
-    background-image: linear-gradient(to bottom,skyblue,navy,skyblue);
+    background-image: linear-gradient(to bottom, skyblue, navy, skyblue);
     margin: 10px 30px;
     height: 80vh;
 }
-.project-video{
+
+.project-video {
     width: 350px;
     padding: 25px 15px;
+    max-width: 100%;
+
 }
-.project-title{
+
+.project-title {
     font-family: "Dancing Script", cursive;
     font-size: 25px;
     font-weight: 600;
     color: turquoise;
 }
-.project-content{
+
+.project-content {
     text-align: justify;
     padding: 15px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
     line-height: 1.2rem;
 }
-#skills{
+
+#skills {
     margin: 2% 8% 0px 8%;
     border: 1px solid navy;
 }
-.skills-main{
+
+.skills-main {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 1.2rem;
     margin: 15px 30px;
 }
-.skill-list{
+
+.skill-list {
     border: 1px solid lightblue;
     padding: 20px;
     text-align: center;
     font-size: 30px;
     /* background-color: rgb(90, 191, 231); */
-    background-image: linear-gradient(to top right,navy,skyblue);
+    background-image: linear-gradient(to top right, navy, skyblue);
     border-radius: 20px;
     position: relative;
     /* height: 25vh; */
 }
-.skill-icon{
+
+.skill-icon {
     padding: 15px;
 }
-.skill-head{
+
+.skill-head {
     color: rgb(39, 171, 223);
     background-color: whitesmoke;
     border-radius: 20px;
     font-size: 20px;
 }
+
 /* .percentage{
     font-size: 20px;
     padding: 10px 0px;
@@ -195,46 +230,56 @@ nav{
     background-color: turquoise;
     width: 99%;
 } */
-#education-experience{
+#education-experience {
     margin: 2% 8% 0px 8%;
     border: 1px solid white;
 }
-.edu-exp{
+
+.edu-exp {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap: 1.2rem;
-    margin: 25px;
+    /* margin: 25px; */
+    margin: 25px auto;
+    padding: 0 auto;
 }
-.edu-and-exp{
+
+.edu-and-exp {
     text-align: left;
     color: wheat;
     padding: 15px;
     border: 2px dotted lightblue;
 }
-.edu-exp-head{
+
+.edu-exp-head {
     color: lightblue;
     padding: 15px;
     font-size: 25px;
     text-align: center;
 }
-.e-list{
+
+.e-list {
     font-size: 20px;
     font-family: "Libertinus Mono", monospace;
-    line-height: 1.4rem;
-    
+    line-height: 1.6rem;
+
+
 }
-#contacts{
+
+#contacts {
     margin: 2% 8% 0px 8%;
     /* border: 1px solid white; */
 }
-.contact-icons{
+
+.contact-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1%;
 }
-.each-contact-icon{
+
+.each-contact-icon {
     /* padding: 10px; */
     /* to make it round */
     width: 50px;
@@ -246,47 +291,56 @@ nav{
     margin: 0px 10px;
     /* background-color: aliceblue; */
 }
-.icon{
-    font-size: 25px;
+
+.icon {
+    font-size: 30px;
 }
-.each-contact-icon:hover{
-    background-image: linear-gradient(to bottom right,navy,white,skyblue);
+
+.each-contact-icon:hover {
+    background-image: linear-gradient(to bottom right, navy, white, skyblue);
 }
-#mail{
+
+#mail {
     color: blanchedalmond;
     padding: 10px;
+    font-size: 20px;
 }
+
 /* footer{
     border: 2px solid white;
 } */
-#footer-text{
+#footer-text {
     text-align: center;
     /* margin: 15px; */
     font-weight: 700;
     color: skyblue;
     margin: 0px;
 }
-.home-arrow{
+
+.home-arrow {
     float: right;
     margin: -40px 20px 20px 0px;
 }
+
 /* .home-arrow:hover{
     background-color: skyblue;
 } */
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* for accessing and styling the scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;
 }
+
 /* track is the path through which the thumb moves.thumb is the moving part */
-::-webkit-scrollbar-track{
-    background-color:navy;
+::-webkit-scrollbar-track {
+    background-color: navy;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
@@ -299,12 +353,17 @@ html{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .project-list {
+        height: fit-content;
+    }
 }
 
 @media (max-width:992px) {
     body {
-  overflow-x: hidden;
-}
+        overflow-x: hidden;
+    }
+
     .about-body {
         flex-wrap: wrap;
         display: grid;
@@ -327,4 +386,36 @@ html{
     #img-home {
         width: auto;
     }
+}
+
+@media (max-width:480px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .skills-main {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+    }
+
+    .project-list {
+        height: 100vh;
+    }
+
+    #education-experience {
+        width: fit-content;
+    }
+
+    .edu-exp {
+        width: fit-content;
+    }
+
 }
