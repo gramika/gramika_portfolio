@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- aos linking - for scrolling animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- boxIcons linking -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 
@@ -29,8 +32,17 @@
         <nav>
             <!-- logo image -->
             <img src="./images/logo.png" alt="no logo" id="logo">
+            <!-- navbar collapsing for making it responsive -->
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <!-- menuIcon -->
+                 <i class='bx bx-menu' id="menuIcon"></i>
+                 <!-- closeIcon -->
+                 <i class='bx bx-x' id="closeIcon"></i>
+                 
+            </label>
             <!-- navbar items -->
-            <ul>
+            <ul class="nav-list">
                 <li class="list-items"><a href="#home" class="list-data">HOME</a></li>
                 <li class="list-items"><a href="#about" class="list-data">ABOUT ME</a></li>
                 <li class="list-items"><a href="#projects" class="list-data">PROJECTS</a></li>
@@ -39,6 +51,7 @@
                 <li class="list-items"><a href="#education-experience" class="list-data">EXPERIENCE</a></li>
                 <li class="list-items"><a href="#contacts" class="list-data">CONTACT</a></li>
             </ul>
+            
         </nav>
         <!-- home section -->
         <section id="home">
@@ -52,15 +65,6 @@
                 <div class="home-img">
                     <img id="img-home" src="./images/techie.png" alt="gramika image">
                 </div>
-            <div class="home-text">
-                <h1 id="heading">GRAMIKA SIJU</h1>
-                <h2 id="subhead"><span id="heading-sub">ME(A)RN</span> FULL-STACK <br>DEVELOPER</h2>
-                <a id="download" href="./images/grami.pdf" target="_blank">download CV</a>
-            </div>
-            <!-- home image -->
-            <div class="home-img">
-                <img id="img-home" src="./images/techie_resized.png" alt="gramika image">
-            </div>
         </section>
         <!-- about section -->
         <section id="about">
