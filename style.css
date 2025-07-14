@@ -5,7 +5,7 @@
     font-family: "Cardo", serif;
     max-width: 100%;
     /* for easier debugging outline can be used*/
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* background-color: navy; */
     /* color: black; */
 }
